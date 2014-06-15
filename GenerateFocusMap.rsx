@@ -4,8 +4,8 @@
 ##low_rejection_bound=number 0.01
 ##high_rejection_bound=number 0.99
 ##pooling_str=string loglinear
-##resample_rasters=string yes
-##equal_weighting=string yes
+##resample_rasters=boolean True
+##equal_weighting=boolean True
 ##weight_1=number 0.25
 ##weight_2=number 0.25
 ##weight_3=number 0.25
@@ -22,15 +22,15 @@ if (n_layers<2 | n_layers>4) rp.messagebox('number of layers must be between 2 a
 
 inp_weights=c(weight_1,weight_2,weight_3,weight_4)
 
-if (equal_weighting=='yes')
+if (equal_weighting)
 {
 inp_weights[1:n_layers]=1/n_layers
 }
 
 layers=input_rasters
 
-if (resample_rasters=='yes')
-{layers=ResampleLayers(input_rasters,resamp=TRUE)}
+if (resample_rasters)
+{layers=ResampleLayers(input_rasters)}
 
 rej_bds <- c(low_rejection_bound,high_rejection_bound)
 
