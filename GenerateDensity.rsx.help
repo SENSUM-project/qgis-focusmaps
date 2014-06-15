@@ -1,0 +1,22 @@
+(dp0
+S'ALG_CREATOR'
+p1
+VMassimiliano Pittore pittore(at)gfz-potsdam.de
+p2
+sS'dens '
+p3
+Voutput raster describing the resulting density distribution
+p4
+sS'ALG_DESC'
+p5
+VGenerates a density distribution of a set of geospatial points using a kernel density estimator.\u000a\u000aR dependencies: packages "maptools", "spatstat", "raster"
+p6
+sS'vec_layer '
+p7
+Vlayer containing a set of points
+p8
+sS'ALG_HELP_CREATOR'
+p9
+VMassimiliano Pittore pittore(at)gfz-potsdam.de
+p10
+s.

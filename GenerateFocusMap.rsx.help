@@ -1,0 +1,82 @@
+(dp0
+S'weight_4'
+p1
+VWeight of layer 4 (if existing)
+p2
+sS'ALG_DESC'
+p3
+VThis script computes a Focus Map, linear or loglinear weighted combination of raster layers. \u000aThe script is based on the r package "focusmapr", developed within the FP-7 Project SENSUM (www.sensum-project.eu)\u000a\u000aR depencies: package "focusmapr" 
+p4
+sS'equal_weighting'
+p5
+VLogical. If equal_weighting=="yes" then the weights are re-computed and set = 1/n_layers, where n_layers is the total number of layers (<4). Otherwise, the weights can be set by the user. 
+p6
+sS'weight_1'
+p7
+VWeight of layer 1
+p8
+sS'Home_ranges'
+p9
+VA vector containing the home ranges corresponding to the smallest area on which the probability of relocating an animal is equal to value chosen for the "Percentage" parameter.\u000a
+p10
+sS'weight_3'
+p11
+VWeight of layer 3 (if existing)
+p12
+sS'pooling_str'
+p13
+VType of pooling algorithm. can be either "linear" or "loglinear".\u000a\u000a"linear" pooling implies additive combination, "loglinear" pooling implies multiplicative combination.
+p14
+sS'ALG_CREATOR'
+p15
+VMassimiliano Pittore pittore(at)gfz-potsdam.de\u000a \u000a
+p16
+sS'resample_rasters'
+p17
+VLogical. If resample_rasters=="yes" the input rasters are resampled to harmonize origin and resolutions. In this case, the first raster is used to set the default resolution.
+p18
+sS'weight_2'
+p19
+VWeight of layer 2
+p20
+sS'Layer'
+p21
+VA vector containing the relocations of one or more animails.
+p22
+sS'Field'
+p23
+VThe field that contains the unique identifier (type "string") for each animal.
+p24
+sS'input_rasters'
+p25
+Vlist of raster input layers. Number of input layers must be at least 2 and at most 4.
+p26
+sS'Grid'
+p27
+VThe size of the grid (number of cells) on which the utilization distribution is calculated by the kernel function.
+p28
+sS'ALG_HELP_CREATOR'
+p29
+VMassimiliano Pittore pittore(at)gfz-potsdam.de
+p30
+sS'high_rejection_bound'
+p31
+Vhigher percentile defining the rejection bounds for normalization of the input layers. \u000a\u000a0 <= low_rejection_bounds < high_rejection_bounds <= 1\u000a\u000anote: set  it to 1 to achieve standard normalization
+p32
+sS'low_rejection_bound'
+p33
+Vlower percentile defining the rejection bounds for normalization of the input layers. \u000a\u000a0 <= low_rejection_bounds < high_rejection_bounds <= 1\u000a\u000anote: set  it to 0 to achieve standard normalization 
+p34
+sS'Folder'
+p35
+VThe ouput folder where the rasters containing the utilization distributions generated for each animal by the kernel funciton will be sent.
+p36
+sS'Percentage'
+p37
+VA single value giving the percentage level for home-range estimation. \u000a\u000aFor example, Percentage= 95  corresponds to the smallest area on which the probability to relocate the animal is equal to 0,95.
+p38
+sS'focus_map'
+p39
+Voutput raster defining the resulting focus map. The layer has extent equal to minimal intersection of input layers, and resolution equal to the first input layer (if resample_layers="yes"). 
+p40
+s.
