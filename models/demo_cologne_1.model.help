@@ -1,0 +1,26 @@
+(dp0
+VRASTERLAYER_BUILDINGDENSITY
+p1
+Vdensity  of buildings in the city of Cologne. The density raster has been generated with the QGIS heatmap utility, and must be flipped in order to be further processed.
+p2
+sS'ALG_DESC'
+p3
+VSENSUM demo . Cologne.\u000aThe script generates a set of sampling points based on a focus map. The focus map is generated from two layers, the extent of a flood scenario and the density of buildings. \u000aThe generated points are automatically written in a table  postgreSQL/postgis database.
+p4
+sVRASTERLAYER_FLOODMODEL
+p5
+VFlood scenario for Cologne, provided by S. Vorogushin et Al.
+p6
+sS'ALG_CREATOR'
+p7
+VMassimiliano Pittore <pittore@gfz-potsdam.de>
+p8
+sS'sampling_points_ALG2'
+p9
+Vset of sampling points generated according to the focus map.
+p10
+sS'ALG_HELP_CREATOR'
+p11
+VMassimiliano Pittore <pittore@gfz-potsdam.de>
+p12
+s.
